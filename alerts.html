@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ADEM | NDI - Alertes</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+      <a class="navbar-brand" href="index.html">Sécurité Routière</a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Prévention</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Alertes</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="map-sidebar">
+      <div class="card card-light map-card">
+        <h3 class="card-header">Alertes Accidents</h3>
+        <div class="card-block">
+          <h4 class="card-title">Guide d'Utilisation</h4>
+          <p class="card-text" style="margin:-10px 0"><b>Pour ajouter un accident :</b></br> - Cliquez directement sur la map</p>
+          <p class="card-text"><b>Pour supprimer les accidents :</b></br> - Cliquez sur le boutton ci-dessous</p>
+          <h4 class="card-title" style="margin-bottom:-10px">En cas d'accident</h4>
+          <p class="card-text"> - Mettez-vous en sécurité</br>
+                                - Appelez les pompiers (17)</p>
+        </div>
+      </div>
+      <div class="twitter-container">
+        <a class="twitter-timeline" href="https://twitter.com/RoutePlusSure?ref_src=twsrc%5Etfw">Tweets de RoutePlusSure</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+      <div id="mapInput">
+        <input onclick="clearMarkers();" type=button value="Supprimer Accidents" class="btn btn-danger">
+      </div>
+    </div>
+
+    <!--  Start Map Section  -->
+    <section class="map" id="connect">
+      <div id="map"></div>
+    </section>
+    <!--  End Map Section  -->
+
+    <!--    Javascript Files    -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/map.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKat7bgXa9v7LvuJl2WXt6baOkF_Gfd9o&callback=initialize">
+    </script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
